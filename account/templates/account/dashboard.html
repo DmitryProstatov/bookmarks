@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+
+    <p>Добро пожаловать на вашу страницу профиля.</p>
+
+
+  <p>Вы также можете <a href="{% url 'edit' %}">отредактируйте свой профиль
+</a> или <a href="{% url 'password_change' %}">измените свой пароль</a>.</p>
+<p>Добавить изображение в коллекцию<a href="{% url 'images:create' %}"> Загрузить </a> </p>
+
+
+
+{% endblock %}
